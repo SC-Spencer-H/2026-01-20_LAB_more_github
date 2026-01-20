@@ -6,11 +6,11 @@ namespace CompanyManagement.Models
 {
     internal class Client
     {
-        Guid Id { get; set; }
-        string Name { get; set; }
-        string Email { get; set; }
-        DateTime CreatedOn { get; set; }
-        private bool IsActive { get; set; }
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public bool IsActive { get; private set; }
 
         public Client(string name, string email)
         {
